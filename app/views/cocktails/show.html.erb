@@ -1,0 +1,16 @@
+<p>
+  <strong>Name:</strong>
+  <%= @cocktail.name %>
+</p>
+
+<h2>Ingreidents:</h2>
+<ul>
+  <% @cocktail.ingreidents.each do |review| %>
+    <li><%= ingreident.name %> <%= link_to 'Remove me', ingredient_path(ingredient), method: :delete %></li>
+  <% end %>
+</ul>
+
+<p>
+  <strong>Doses:</strong>
+  <%= @ingredient.desciption %>
+</p>
